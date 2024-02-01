@@ -16,20 +16,3 @@ To get started, clone this repository to your local machine and fire up the `ind
 
 ```bash
 gh repo clone Gemeking/car-rental
-
-bash
-Copy code
-gh repo clone Gemeking/car-rental
-## Contributing
-We welcome contributions to enhance our UI design or add new functionalities! Fork this repository, make your magic happen, and send us a pull request.
-
-## Credits
-This project is crafted with love by Gemechis Z and Abel Z.
-
-## License
-Car Rental operates under the MIT License, so feel free to explore, customize, and share!
-
-## Feedback
-Got thoughts, questions, or suggestions? We're all ears! Reach out to us anytime.
-
-Thank you for choosing Car Rental for your UI needs! Let's hit the road together and make car rentals fun! 🚗✨
