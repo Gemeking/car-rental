@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Form</title>
+    <style>
+        body {
+            padding: 25px;
+            font-family: 'Arial', sans-serif;
+            background-image: url('images/codioful-formerly-gradienta-m_7p45JfXQo-unsplash.jpg');
+            color: #333;
+        }
+
+        h1 {
+            color: #0066cc;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        legend {
+            color: #0066cc;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #0066cc;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #004080;
+        }
+
+    </style>
+    <script>
+        function showTime() {
+            document.getElementById('currentTime').innerHTML = new Date().toUTCString();
+        }
+        showTime();
+        setInterval(function () {
+            showTime();
+        }, 1000);
+
+        function showSuccessMessage() {
+            alert('Payment successful! Thank you for your purchase.');
+        }
+    </script>
+</head>
+<body>
+    <div style="background-color: #333; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+        <a href="index.html" style="color: #fff; text-decoration: none;">Back to Home</a>
+        <h1 style="color: #ffcc00; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 50px; margin: 0;">
+            SHEGER CAR Rental
+        </h1>
+        <p>  </p>
+    </div>
+
+<br>     
+<form onsubmit="showSuccessMessage(); return false;">
+    <h1>Payment Form</h1>
+    <p>Required fields are followed by *</p>
+
+    <fieldset>
+        <legend>Contact information</legend>
+        <p>
+            <label for="name">Name: *</label>
+            <input type="text" name="name">
+        </p>
+        <p>
+            <label>Gender: *</label>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+        </p>
+        <p>
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" rows="6" cols="80"></textarea>
+        </p>
+        <p>
+            <label for="email">Email: *</label>
+            <input type="email" name="email" id="email" value="" >
+        </p>
+        <p>
+            <label for="pincode">Pincode: *</label>
+            <input type="number" name="pincode" id="pincode" value="" >
+        </p>
+    </fieldset>
+
+    <hr>
+
+    <fieldset>
+        <legend>Payment Information</legend>
+        <p>
+            <label for="card_type">Card Type: *</label>
+            <select name="card_type" id="card_type" >
+                <option value="">--- Select a Card type---</option>
+                <option value="visa">Visa</option>
+                <option value="rupay">Rupay</option>
+                <option value="master card">Master Card</option>
+            </select>
+        </p>
+        <p>
+            <label for="cardNumber">Card Number: *</label>
+            <input type="number" name="cardNumber" id="cardNumber" >
+        </p>
+        <p>
+            <label for="exp_date">Expiration Date: *</label>
+            <input type="date" name="exp_date" id="exp_date" >
+        </p>
+        <p>
+            <label for="CVV">CVV: *</label>
+            <input type="password" name="CVV" id="CVV">
+        </p>
+    </fieldset>
+
+    <input type="submit" value="Pay Now" />
+</form>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="st.css">
+    <link rel="icon" href="./images/icon 11.png" type="image/x-icon">
+</head>
+<body style="background-image: url('images/auto_europe_cover.jpg');">
+    <h1  style="color:  #373632; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 50px;"><a href="index.html" class="back-to-home-btn" style="margin-right:450px;">Back to Home</a>SHEGER CAR Rental</h1>
+    <div class="login-page">
+      
+        <div class="form">
+          <div class="login">
+            <div class="login-header">
+              <p style="color: #ffffff; font-size: 22px;">Please enter your credentials to login.</p>
+            </div>
+          </div>
+          <form class="registration-form" action="/login.html">
+            <input type="text" placeholder="Full Name" required/>
+            <input type="email" placeholder="Email" required/>
+            <input type="password" placeholder="Password" required/>
+            <select>
+                <option value="" disabled selected>Select your Country</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="australia">Australia</option>
+                <option value="Jamaica">Jamaica</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+            <button type="submit">Register</button>
+            <p class="message">Already have an account? <a href="login.html">Login</a></p>
+          </form>
+        </div>
+      </div>
+      
+      <style>
+        .back-to-home-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #3498db; 
+      color: #ffffff; 
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-to-home-btn:hover {
+      background-color: #2980b9;
+    }
+
+
+        .login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.login-page .form .login{
+  margin-top: -31px;
+margin-bottom: 26px;
+}
+.registration-form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .registration-form input,
+    .registration-form select,
+    .registration-form button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    .registration-form button {
+      background-color: #3498db;
+      color:#5e5003; 
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .registration-form button:hover {
+      background-color: #2980b9;
+    }
+
+    .registration-form .message {
+      margin-top: 15px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 55px;
+    }
+
+    .registration-form .message a {
+      text-decoration: none;
+      color: #5b4e06;
+      font-weight: bold;
+      display: inline-block;
+      padding: 5px 10px;
+      
+    }
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+</style>
+
+
+</body>
+</html>

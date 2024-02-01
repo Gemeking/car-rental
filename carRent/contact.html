@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="st.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./images/icon 11.png" type="image/x-icon">
+    <script>
+       function showSuccessMessage() {
+            alert('successfully sent. Thank You!!!');
+        }
+    </script>
+</head>
+<body>
+    <style>
+        input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+    </style>
+    <header>
+        <div class="header-container">
+            <img src="./images/icon 11.png" alt="Sheger Logo">
+            <h1>About Sheger Car Rental</h1>
+        </div>
+    </header>
+    <div class="nav" style="border-radius: 0px;">
+        <ul>
+           <li style="padding-right: 300px;padding-top: 12px;">&nbsp;&nbsp;&nbsp;&nbsp;<img id="icon" src="./images/icon 11.png" alt="icon"></li>
+            <li style="padding-right: 100px;padding-top: 8px;"><a href="home.html">Home</a></li>
+            <li style="padding-right: 100px;padding-top: 8px;"><a href="about.html">About</a></li>
+            <li style="padding-right: 100px; padding-top: 8px;"><a href="Gallery.html">Gallary</a></li>
+            <li > <a href="login.html" style="text-decoration: none;"><img id="icon" style="padding-top: 3px; background-color: aliceblue; border-radius: 50%;" width="20px" height="20px" src="icons/user.png" alt="icon"></a></li>
+            <li > <a href="index.html" style="text-decoration: none;"><img id="icon" style="padding-top: 3px; background-color: aliceblue; border-radius: 50%;" width="20px" height="20px" src="/images/icons8-logout.gif" alt="icon" title="Logout"></a></li>
+            
+        </ul>
+       </div>
+    <div class="container">
+        <form onsubmit="showSuccessMessage(); return false;">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="Ethiopia">Ethiopia</option>
+            <option value="australia">Australia</option>
+            <option value="Jamaica">Jamaica</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+      <div class="footer">
+        <p>&copy; 2024 Sheger Car Reintal. All rights reserved. | Designed by <a href="about.html" target="_blank">Bashewam grade 11 students</a></p>
+        <a href="https://t.me/your_telegram_username" target="_blank"><img width="30px" height="30px" src="icons/telegram.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/your_twitter_username" target="_blank"><img width="30px" height="30px"src="icons/twitter.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="mailto:your_email@gmail.com" target="_blank"><img width="30px" height="30px" src="icons/new.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.facebook.com/your_facebook_page" target="_blank"><img width="30px" height="30px" src="icons/facebook.png"></a>
+      <br>
+      <p ><a style="color: rgb(0, 0, 0);"href="#">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="gallery.html" style="color: rgb(0, 0, 0);">Gallery</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="about.html" style="color: rgb(0, 0, 0);">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="contact.html" style="color: rgb(0, 0, 0);">Contact Us</a></p>
+      </div>
+</body>
+</html>
